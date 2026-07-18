@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+:root{
+    --background-image: 'images/busi\ card\ BEEG-01\ copy.png';
+    --logo: "images/logo.png"
+    --logo-only: "images/logo_only.png"
+    --btn-background-colour: #ffffff
+    --btn-border-colour: #c2c5ff
+}
+
+.light-mode{
+    background-image: url('images/white-bg.png');
+    --logo: "images/logo(purp).png"
+    --logo-only: "images/logo_only(purp).png"
+    --btn-background-colour: #614d9f
+    --btn-border-colour: #1a1628
+}
+
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    cursor: url('images/forg.png'), auto;
+}
+
+#purple-bg {
+    background-image: url('images/busi\ card\ BEEG-01\ copy.png');
+}
+
+#white-bg {
+    background-image: url('images/white-bg.png');
+}
+
+button {
+    width: 180px;
+    height: 75px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 75px;
+    border-width: 5px;
+    border-color: #614d9f;
+    background-color: #c2c5ff;
+
+    /*text*/
+    color: #1a1628;
+    font-family: 'Titan One';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+button:hover {
+    transform: scale(1.1);
+
+    border-color: #c2c5ff;
+    background-color: #ffffff;
+
+    /*text*/
+    color: #614d9f;
+    font-family: 'Titan One';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.darkmode-btn {
+    background-image: url(images/buttons/sun.png);
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    border-color: #c2c5ff;
+
+    width: 75px;
+    height: 75px;
+    display: block;
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-button {
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+    width: 550px;
+    height: 70px;
+
+    background-color: rgba(0,0,0,0);
+    background-size: 90%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.contact-button:hover {
+    transform: scale(1.2);
+    background-color: rgba(0,0,0,0);
+}
+
+#youtube-btn {
+    background-image: url('images/buttons/youtube.png');
+}
+
+#itch-btn {
+    background-image: url('images/buttons/itch.png');
+}
+
+#bsky-btn {
+    background-image: url('images/buttons/bsky.png');
+}
+
+header {
+    top: 0;
+    margin-top: 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+header img {
+    max-height: 240px;
+    width: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.logo {
+    max-height: 240px;
+    width: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.title-container {
+    margin: auto;
+    width: 50%;
+    height: 50px;
+    border-radius: 75px;
+    background-color: #1a1628;
+    padding: 5px;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #c2c5ff;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.button-container {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}
+
+.contact-card {
+    background-image: url('images/contact\ card\ blank.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 120vh;
+    height: 60vh;
+    padding: 50px;
+    border-radius: 65px;
+}
+
+.container {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    padding: 50px;
+    border-radius: 75px;
+    background-color: rgba(26, 22, 40, .7);
+}
+
+h1 {
+    text-align: center;
+    color: #c2c5ff;
+    font-family: 'Titan One';
+    font-size: 70px;
+}
+
+h2 {
+    text-align: center;
+    color: #c2c5ff;
+    font-family: 'Titan One';
+    font-size: 50px;
+}
+
+h3 {
+    margin-top: 5px;
+    color: #c2c5ff;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 30px;
+}
+
+p {
+    color: #c2c5ff;
+    font-family: 'Nunito';
+    font-weight: 300;
+    font-size: 20px;
+}
