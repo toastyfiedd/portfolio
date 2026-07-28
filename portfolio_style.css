@@ -41,6 +41,10 @@ body {
     background-image: url('images/white-bg.png');
 }
 
+footer {
+    height: 50px;
+}
+
 button {
     width: 180px;
     height: 75px;
@@ -202,6 +206,76 @@ header img {
     border-radius: 75px;
     background-color: rgba(26, 22, 40, .7);
 }
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 5%;
+    column-gap: 5%;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+.portfolio-btn {
+    grid-area: unset;
+    background-image: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    padding-top: 100%;
+}
+
+#work-1{
+    background-image: url('images/crab.jpg');
+}
+
+#work-2{
+    background-image: url('images/forg.png');
+    background-size: contain;
+}
+
+#work-3{
+    background-image: url('images/nyan-cat.gif');
+}
+
+#work-4{
+    background-image: unset;
+}
+
+#work-5{
+    background-image: unset;
+}
+
+#work-6{
+    background-image: unset;
+}
+
+#work-7{
+    background-image: unset;
+}
+
+#work-8{
+    background-image: unset;
+}
+
+#work-9{
+    background-image: unset;
+}
+
+
 
 h1 {
     text-align: center;
