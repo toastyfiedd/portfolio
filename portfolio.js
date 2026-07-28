@@ -69,9 +69,9 @@ function darkTheme() {
     //window.alert('goodbye')
     document.body.style.backgroundImage = "url('images/busi\ card\ BEEG-01\ copy.png')";
 
-    if (logo.src == "file:///Users/laurenmoss/Portfolio%20Website/images/logo(purp).png"){
+    if (logo.src.endsWith ("/logo(purp).png")){
         logo.src="images/logo.png"}
-    if (logo.src == "file:///Users/laurenmoss/Portfolio%20Website/images/logo_only(purp).png"){
+    if (logo.src.endsWith ("logo_only(purp).png")){
         logo.src="images/logo_only.png"}
 
     darkModeBtn.style.borderColor = "#c2c5ff"
