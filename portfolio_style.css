@@ -205,10 +205,15 @@ header img {
     padding: 50px;
     border-radius: 75px;
     background-color: rgba(26, 22, 40, .7);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-grid {
+    margin: 0 auto;
     display: grid;
+    width: 90%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 5%;
@@ -228,18 +233,15 @@ header img {
     align-items: center;
     border-width: 0px;
 
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
 
     aspect-ratio: 1 / 1;
-    width: 100%;
-    padding-top: 100%;
+    width: 85%;
+    padding-top: 85%;
 }
 
 #work-1{
-    background-image: url('images/crab.jpg');
+    background-image: url('images/perks-of-being-a-wallflower-thumbnail.png');
 }
 
 #work-2{
@@ -252,7 +254,7 @@ header img {
 }
 
 #work-4{
-    background-image: unset;
+    background-image: url('images/crab.jpg');
 }
 
 #work-5{
@@ -273,6 +275,87 @@ header img {
 
 #work-9{
     background-image: unset;
+}
+
+.article-grid {
+    background-color: #614d9f;
+    margin: 0 auto;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 5%;
+    column-gap: 5%;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+.article-grid img {
+    border-radius: 75px;
+}
+
+.popup {
+      margin: 70px auto;
+      width: 500px;
+      position:fixed;
+      justify-self: center;
+      align-self: center;
+      z-index: 999;
+      background: transparent;
+}
+.overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+}
+
+.video-window {
+    background-color: #c2c5ff;
+    border: 3px solid #1a1628;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    height: auto;
+    width: 600px;
+    padding: 20px 10px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.window-top {
+    background-color: #614d9f;
+    border: 3px solid #1a1628;
+    border-radius: 15px 15px 0px 0px;
+    height: 50px;
+    width: 600px;
+    padding: 0px 10px;
+    display: flex;
+
+    justify-content: right;
+    align-items: center;
+}
+
+.close-btn {
+    background-color: #c2c5ff;
+    border: 3px solid #1a1628;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
 }
 
 
