@@ -100,44 +100,46 @@ const video9 = document.getElementById('video9');
 closeButton.addEventListener('click', function(e)   {
     e.preventDefault();
 
+    const currentSrc
+
     if (video1) {
-        const currentSrc = video1.src;
+        currentSrc = video1.src;
         video1.src = '';
         video1.src = currentSrc;
     }
 
     if (video2) {
-        const currentSrc = video2.src;
+        currentSrc = video2.src;
         video2.src = '';
         video2.src = currentSrc;
     }
 
     if (video3) {
-        const currentSrc = video3.src;
+        currentSrc = video3.src;
         video3.src = '';
         video3.src = currentSrc;
     }
 
     if (video4) {
-        const currentSrc = video4.src;
+        currentSrc = video4.src;
         video4.src = '';
         video4.src = currentSrc;
     }
 
     if (video5) {
-        const currentSrc = video5.src;
+        currentSrc = video5.src;
         video5.src = '';
         video5.src = currentSrc;
     }
 
     if (video6) {
-        const currentSrc = video6.src;
+        currentSrc = video6.src;
         video6.src = '';
         video6.src = currentSrc;
     }
 
     if (video7) {
-        const currentSrc = video7.src;
+        currentSrc = video7.src;
         video7.src = '';
         video7.src = currentSrc;
     }
