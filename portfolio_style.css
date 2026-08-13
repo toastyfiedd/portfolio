@@ -3,7 +3,7 @@
 
 
 :root{
-    --background-image: 'images/busi\ card\ BEEG-01\ copy.png';
+    --background-image: 'images/purp-bg.png';
     --logo: "images/logo.png"
     --logo-only: "images/logo_only.png"
     --btn-background-colour: #ffffff
@@ -34,7 +34,7 @@ body {
 }
 
 #purple-bg {
-    background-image: url('images/busi\ card\ BEEG-01\ copy.png');
+    background-image: url('images/purp-bg.png');
 }
 
 #white-bg {
