@@ -67,12 +67,12 @@ function lightTheme() {
 function darkTheme() {
     
     //window.alert('goodbye')
-    document.body.style.backgroundImage = "url('images/busi\ card\ BEEG-01\ copy.png')";
+    document.body.style.backgroundImage = "url('images/purp-bg.png')";
 
-    if (logo.src.endsWith ("/logo(purp).png")){
-        logo.src="images/logo.png";}
+    if (logo.src.endsWith ("logo(purp).png")){
+        logo.src="images/logo.png"}
     if (logo.src.endsWith ("logo_only(purp).png")){
-        logo.src="images/logo_only.png";}
+        logo.src="images/logo_only.png"}
 
     darkModeBtn.style.borderColor = "#c2c5ff"
     darkModeBtn.style.backgroundColor = "#ffffff"
@@ -82,3 +82,19 @@ function darkTheme() {
     
 }
 
+
+
+// MAIN PAGE GALLERY
+
+const closeButton = document.querySelector('.close-btn');
+const video = document.getElementById('video');
+
+closeButton.addEventListener('click', function(e)   {
+    e.preventDefault();
+
+    if (video) {
+        const currentSrc = video.src;
+        video.src = '';
+        video.src = currentSrc;
+    }
+});
