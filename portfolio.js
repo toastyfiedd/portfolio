@@ -101,59 +101,62 @@ closeButton.addEventListener('click', function(e)   {
     e.preventDefault();
 
     const currentSrc
+    const currentVid
 
     if (video1) {
+        currentVid = video1
         currentSrc = video1.src;
         video1.src = '';
-        video1.src = currentSrc;
     }
 
     if (video2) {
+        currentVid = video2
         currentSrc = video2.src;
         video2.src = '';
-        video2.src = currentSrc;
     }
 
     if (video3) {
+        currentVid = video3
         currentSrc = video3.src;
         video3.src = '';
-        video3.src = currentSrc;
     }
 
     if (video4) {
+        currentVid = video4
         currentSrc = video4.src;
         video4.src = '';
-        video4.src = currentSrc;
     }
 
     if (video5) {
+        currentVid = video5
         currentSrc = video5.src;
         video5.src = '';
-        video5.src = currentSrc;
     }
 
     if (video6) {
+        currentVid = video6
         currentSrc = video6.src;
         video6.src = '';
-        video6.src = currentSrc;
     }
 
     if (video7) {
+        currentVid = video7
         currentSrc = video7.src;
         video7.src = '';
-        video7.src = currentSrc;
     }
 
     if (video8) {
+        currentVid = video8
         const currentSrc = video8.src;
         video8.src = '';
-        video8.src = currentSrc;
     }
 
     if (video9) {
+        currentVid = video9
         const currentSrc = video9.src;
         video9.src = '';
-        video9.src = currentSrc;
     }
+
+    currentVid.src = currentSrc;
 
 });
