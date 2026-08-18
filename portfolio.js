@@ -86,7 +86,7 @@ function darkTheme() {
 
 // MAIN PAGE GALLERY
 
-const closeButton = document.querySelector('.close-btn');
+const closeButton = document.getElementsByClassName('close-btn');
 const video1 = document.getElementById('video1');
 const video2 = document.getElementById('video2');
 const video3 = document.getElementById('video3');
@@ -102,7 +102,56 @@ closeButton.addEventListener('click', function(e)   {
 
     if (video1) {
         const currentSrc = video1.src;
-        video1.src = 'https://youtu.be/Y57pqI-msiM?si=2-Wub5RZk6mBDtEI';
+        video1.src = '';
         video1.src = currentSrc;
     }
+
+    if (video2) {
+        const currentSrc = video2.src;
+        video2.src = '';
+        video2.src = currentSrc;
+    }
+
+    if (video3) {
+        const currentSrc = video3.src;
+        video3.src = '';
+        video3.src = currentSrc;
+    }
+
+    if (video4) {
+        const currentSrc = video4.src;
+        video4.src = '';
+        video4.src = currentSrc;
+    }
+
+    if (video5) {
+        const currentSrc = video5.src;
+        video5.src = '';
+        video5.src = currentSrc;
+    }
+
+    if (video6) {
+        const currentSrc = video6.src;
+        video6.src = '';
+        video6.src = currentSrc;
+    }
+
+    if (video7) {
+        const currentSrc = video7.src;
+        video7.src = '';
+        video7.src = currentSrc;
+    }
+
+    if (video8) {
+        const currentSrc = video8.src;
+        video8.src = '';
+        video8.src = currentSrc;
+    }
+
+    if (video9) {
+        const currentSrc = video9.src;
+        video9.src = '';
+        video9.src = currentSrc;
+    }
+
 });
