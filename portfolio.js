@@ -102,7 +102,7 @@ closeButton.addEventListener('click', function(e)   {
 
     if (video1) {
         const currentSrc = video1.src;
-        video1.src = '';
+        video1.src = 'https://youtu.be/Y57pqI-msiM?si=2-Wub5RZk6mBDtEI';
         video1.src = currentSrc;
     }
 });
