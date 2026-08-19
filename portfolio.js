@@ -106,22 +106,34 @@ work3.addEventListener('click',  () => {
   openVideo(event, video3);
 });
 const work4 = document.getElementById('work-4');
-work4.addEventListener('click', openVideo);
+work4.addEventListener('click',  () => {
+  openVideo(event, video4);
+});
 const work5 = document.getElementById('work-5');
-work5.addEventListener('click', openVideo);
+work5.addEventListener('click',  () => {
+  openVideo(event, video5);
+});
 const work6 = document.getElementById('work-6');
-work6.addEventListener('click', openVideo);
+work6.addEventListener('click',  () => {
+  openVideo(event, video6);
+});
 const work7 = document.getElementById('work-7');
-work7.addEventListener('click', openVideo);
+work7.addEventListener('click',  () => {
+  openVideo(event, video7);
+});
 const work8 = document.getElementById('work-8');
-work8.addEventListener('click', openVideo);
+work8.addEventListener('click',  () => {
+  openVideo(event, video8);
+});
 const work9 = document.getElementById('work-9');
-work9.addEventListener('click', openVideo);
+work9.addEventListener('click',  () => {
+  openVideo(event, video9);
+});
 
 const video1 = "https://www.youtube.com/embed/g1ulXVeBucA?si=6zkkTfJwKCC04uoI";                 //perks
 const video2 = "https://drive.google.com/file/d/1IwDRcSMeBTmGbxkkxarIYVYH6tuTkd6v/preview";     //Soeur Celeste
 const video3 = "https://www.youtube.com/embed/b3oKdXZedwM?si=R94m5H040yL4tO4H";                 //cuphead
-const video4 = "https://www.youtube.com/embed/45F__m5zC0g?si=pPrvJQlvL4QgWrUy";                 //Nimona
+const video4 = "https://www.youtube.com/embed/45F__m5zC0g?si=RTTnd8h8iCdStzvq";                 //Nimona
 const video5 = "https://drive.google.com/file/d/1Fngi1_msNCmWqLk2NmnDfveidCu82FJG/preview";     //Hollow knight
 const video6 = "https://drive.google.com/file/d/1l7D06q_w-yEaT0qZwjV1MRlZNfDzDb4Z/preview";     //Wall-e
 const video7 = "https://drive.google.com/file/d/1KLhn15fqV2K5ZXQsRTfpmhXWIk30Jgi_/preview";     //Ralph
