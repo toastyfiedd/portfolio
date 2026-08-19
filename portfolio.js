@@ -125,7 +125,7 @@ function openVideo(event) {
 
     event.preventDefault();
 
-    video.src = 'https://youtu.be/eRQ8vwi5aWE?si=Ue5CZj5Uj-WxDq1r'
+    video.src = 'https://youtu.be/eRQ8vwi5aWE?si=Ue5CZj5Uj-WxDq1r';
     overlay.style.visibility = 'visible';
     overlay.style.opacity = '1';
     overlay.style.zIndex = '999';
