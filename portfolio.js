@@ -136,12 +136,12 @@ function openVideo(event) {
 function closeVideo(currentVideo) {
     //playSound();
 
+    video.pause();
+    video.currentTime = 0;
+
     overlay.style.visibility = 'hidden';
     overlay.style.opacity = '0';
     overlay.style.zIndex = '-1';
 
    // video = currentVideo;
-
-    video.pause();
-    video.currentTime = 0;
 };
