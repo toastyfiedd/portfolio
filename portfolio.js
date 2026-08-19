@@ -29,6 +29,8 @@ window.onload = ready();
 
 function toggleTheme() {
 
+    //playSound();
+
    darkMode = !darkMode;
    localStorage.setItem("darkMode", darkMode.toString())
   
@@ -86,72 +88,61 @@ function darkTheme() {
 
 // MAIN PAGE GALLERY
 
-const closeButton = document.getElementsByClassName('close-btn');
-const video1 = document.getElementById('video1');
-const video2 = document.getElementById('video2');
-const video3 = document.getElementById('video3');
-const video4 = document.getElementById('video4');
-const video5 = document.getElementById('video5');
-const video6 = document.getElementById('video6');
-const video7 = document.getElementById('video7');
-const video8 = document.getElementById('video8');
-const video9 = document.getElementById('video9');
+const closeButton = document.getElementById('X');
+closeButton.addEventListener('click', closeVideo);
 
-closeButton.addEventListener('click', function(e)   {
-    e.preventDefault();
+const overlay = document.getElementById('generic');
 
-    if (video1) {
-        const currentSrc = video1.src;
-        video1.src = '';
-        video1.src = currentSrc;
-    }
+const video1 = document.getElementById('work-1');
+video1.addEventListener('click', openVideo);
+const video2 = document.getElementById('work-2');
+video2.addEventListener('click', openVideo);
+const video3 = document.getElementById('work-3');
+video3.addEventListener('click', openVideo);
+const video4 = document.getElementById('work-4');
+video4.addEventListener('click', openVideo);
+const video5 = document.getElementById('work-5');
+video5.addEventListener('click', openVideo);
+const video6 = document.getElementById('work-6');
+video6.addEventListener('click', openVideo);
+const video7 = document.getElementById('work-7');
+video7.addEventListener('click', openVideo);
+const video8 = document.getElementById('work-8');
+video8.addEventListener('click', openVideo);
+const video9 = document.getElementById('work-9');
+video9.addEventListener('click', openVideo);
 
-    if (video2) {
-        const currentSrc = video2.src;
-        video2.src = '';
-        video2.src = currentSrc;
-    }
+//function playSound() {
+    //const audio = document.getElementById('btn-sound');
+    //audio.currentTime = 0;
+    //audio.play();
+//}
 
-    if (video3) {
-        const currentSrc = video3.src;
-        video3.src = '';
-        video3.src = currentSrc;
-    }
 
-    if (video4) {
-        const currentSrc = video4.src;
-        video4.src = '';
-        video4.src = currentSrc;
-    }
+const video = document.getElementById('videoo');
 
-    if (video5) {
-        const currentSrc = video5.src;
-        video5.src = '';
-        video5.src = currentSrc;
-    }
+function openVideo(event) {
 
-    if (video6) {
-        const currentSrc = video6.src;
-        video6.src = '';
-        video6.src = currentSrc;
-    }
+    event.preventDefault();
 
-    if (video7) {
-        const currentSrc = video7.src;
-        video7.src = '';
-        video7.src = currentSrc;
-    }
+    video.src = 'https://youtu.be/eRQ8vwi5aWE?si=Ue5CZj5Uj-WxDq1r'
+    overlay.style.visibility = 'visible';
+    overlay.style.opacity = '1';
+    overlay.style.zIndex = '999';
+    
+    //playSound();
+    
+}
 
-    if (video8) {
-        const currentSrc = video8.src;
-        video8.src = '';
-        video8.src = currentSrc;
-    }
+function closeVideo(currentVideo) {
+    //playSound();
 
-    if (video9) {
-        const currentSrc = video9.src;
-        video9.src = '';
-        video9.src = currentSrc;
-    }
+    overlay.style.visibility = 'hidden';
+    overlay.style.opacity = '0';
+    overlay.style.zIndex = '-1';
 
-});
+    video = currentVideo;
+
+    video.pause();
+    video.currentTime = 0;
+};
