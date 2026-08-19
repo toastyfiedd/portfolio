@@ -89,7 +89,7 @@ function darkTheme() {
 // MAIN PAGE GALLERY
 
 const closeButton = document.getElementById('X');
-closeButton.addEventListener('click', closeVideo);
+closeButton.addEventListener('click', openVideo);
 
 const overlay = document.getElementById('generic');
 
@@ -139,9 +139,9 @@ function closeVideo(event) {
 
     event.preventDefault();
     
-    //overlay.style.visibility = 'hidden';
-    //overlay.style.opacity = '0';
-    //overlay.style.zIndex = '-1';
+    overlay.style.visibility = 'hidden';
+    overlay.style.opacity = '0';
+    overlay.style.zIndex = '-1';
 
     video.src = "";
 };
