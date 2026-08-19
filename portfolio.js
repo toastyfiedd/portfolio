@@ -136,8 +136,7 @@ function openVideo(event) {
 function closeVideo(currentVideo) {
     //playSound();
 
-    video.pause();
-    video.currentTime = 0;
+    video.src = '';
 
     overlay.style.visibility = 'hidden';
     overlay.style.opacity = '0';
