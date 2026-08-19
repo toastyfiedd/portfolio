@@ -125,8 +125,6 @@ function openVideo(event) {
 
     event.preventDefault();
 
-    video.src = "https://www.youtube.com/embed/g1ulXVeBucA?si=6zkkTfJwKCC04uoI";
-
     overlay.style.visibility = 'visible';
     overlay.style.opacity = '1';
     overlay.style.zIndex = '999';
@@ -137,7 +135,7 @@ function openVideo(event) {
 
 function closeVideo(currentVideo) {
     //playSound();
-
+    video.src = "";
 
     overlay.style.visibility = 'hidden';
     overlay.style.opacity = '0';
