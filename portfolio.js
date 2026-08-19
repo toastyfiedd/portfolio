@@ -139,9 +139,9 @@ function closeVideo(event) {
 
     event.preventDefault();
     
-    overlay.style.visibility = 'hidden';
-    overlay.style.opacity = '0';
-    overlay.style.zIndex = '-1';
+    //overlay.style.visibility = 'hidden';
+    //overlay.style.opacity = '0';
+    //overlay.style.zIndex = '-1';
 
-    video.src = "https://www.youtube.com/embed/g1ulXVeBucA?si=6zkkTfJwKCC04uoI";
+    video.src = "";
 };
