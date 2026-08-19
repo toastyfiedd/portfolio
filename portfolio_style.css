@@ -75,6 +75,71 @@ button:hover {
     font-weight: 300;
 }
 
+.wide-button {
+    background-color: #c2c5ff;
+    border: solid;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #1a1628;
+
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: left;
+
+    font-size: 50px;
+    font-family: 'Nunito';
+    font-weight: 600;
+}
+
+.wide-button:hover {
+    transform: scale(1.1);
+
+    border-color: #c2c5ff;
+    background-color: #ffffff;
+
+    /*text*/
+    color: #614d9f;
+    font-family: 'Nunito';
+    font-size: 55px;
+    font-weight:900;
+}
+
+.wide-button-O {
+    background-color: #cbcbcb;
+    border: solid;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #1a1628;
+
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: left;
+
+    font-size: 50px;
+    font-family: 'Nunito';
+    font-weight: 600;
+}
+
+.wide-button-O:hover {
+    transform: scale(1);
+    background-color: #cbcbcb;
+    border: solid;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #1a1628;
+
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: left;
+
+    font-size: 50px;
+    font-family: 'Nunito';
+    font-weight: 600;
+}
+
 .darkmode-btn {
     background-image: url(images/buttons/sun.png);
     background-size: 75%;
