@@ -123,7 +123,7 @@ const video = document.getElementById('videoo');
 
 function openVideo(event) {
 
-    event.preventDefault();
+    
 
     video.src = "https://www.youtube.com/embed/g1ulXVeBucA?si=6zkkTfJwKCC04uoI"
     overlay.style.visibility = 'visible';
