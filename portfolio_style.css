@@ -245,36 +245,36 @@ header img {
 }
 
 #work-2{
-    background-image: url('images/forg.png');
+    background-image: url('images/soeur-celeste-thumbnail.png');
     background-size: contain;
 }
 
 #work-3{
-    background-image: url('images/nyan-cat.gif');
+    background-image: url('images/chef-saltbaker-thumbnail.png');
 }
 
 #work-4{
-    background-image: url('images/crab.jpg');
+    background-image: url('images/nimona-thumbnail.png');
 }
 
 #work-5{
-    background-image: unset;
+    background-image: url('images/hollow-knight-thumbnail.png');
 }
 
 #work-6{
-    background-image: unset;
+    background-image: url('images/wall-e-thumbnail.png');
 }
 
 #work-7{
-    background-image: unset;
+    background-image: url('images/wreck-it-relph-thumbnail.png');
 }
 
 #work-8{
-    background-image: unset;
+    background-image: url('images/lost-in-the-sauce-thumbnail.png');
 }
 
 #work-9{
-    background-image: unset;
+    background-image: url('images/painting-day-thumbnail.png');
 }
 
 .article-grid {
