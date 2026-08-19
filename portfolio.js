@@ -29,7 +29,7 @@ window.onload = ready();
 
 function toggleTheme() {
 
-    //playSound();
+    playSound();
 
    darkMode = !darkMode;
    localStorage.setItem("darkMode", darkMode.toString())
@@ -118,21 +118,21 @@ work8.addEventListener('click', openVideo);
 const work9 = document.getElementById('work-9');
 work9.addEventListener('click', openVideo);
 
-const video1 = "https://www.youtube.com/embed/g1ulXVeBucA?si=6zkkTfJwKCC04uoI";
-const video2 = "https://www.youtube.com/embed/Xpf5P7X0sNo?si=oYsHdub9m-ae8KLL";
-const video3 = "https://www.youtube.com/embed/Xpf5P7X0sNo?si=oYsHdub9m-ae8KLL";
-const video4 = '';
-const video5 = '';
-const video6 = '';
-const video7 = '';
+const video1 = "https://www.youtube.com/embed/g1ulXVeBucA?si=6zkkTfJwKCC04uoI";                 //perks
+const video2 = "https://drive.google.com/file/d/1IwDRcSMeBTmGbxkkxarIYVYH6tuTkd6v/preview";     //Soeur Celeste
+const video3 = "https://www.youtube.com/embed/b3oKdXZedwM?si=R94m5H040yL4tO4H";                 //cuphead
+const video4 = "https://www.youtube.com/embed/45F__m5zC0g?si=pPrvJQlvL4QgWrUy";                 //Nimona
+const video5 = "https://drive.google.com/file/d/1Fngi1_msNCmWqLk2NmnDfveidCu82FJG/preview";     //Hollow knight
+const video6 = "https://drive.google.com/file/d/1l7D06q_w-yEaT0qZwjV1MRlZNfDzDb4Z/preview";     //Wall-e
+const video7 = "https://drive.google.com/file/d/1KLhn15fqV2K5ZXQsRTfpmhXWIk30Jgi_/preview";     //Ralph
 const video8 = '';
-const video9 = '';
+const video9 = "https://drive.google.com/file/d/1PzkYpgEmcq0gVDWaCl1hAPXkCMxn0iPX/preview";     //Painting Day
 
-//function playSound() {
-    //const audio = document.getElementById('btn-sound');
-    //audio.currentTime = 0;
-    //audio.play();
-//}
+function playSound() {
+    const audio = document.getElementById('btn-sound');
+    audio.currentTime = 0;
+    audio.play();
+}
 
 
 const video = document.getElementById('videoo');
