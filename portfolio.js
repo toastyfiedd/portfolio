@@ -89,28 +89,44 @@ function darkTheme() {
 // MAIN PAGE GALLERY
 
 const closeButton = document.getElementById('X');
-closeButton.addEventListener('click', openVideo);
+closeButton.addEventListener('click', closeVideo);
 
 const overlay = document.getElementById('generic');
 
-const video1 = document.getElementById('work-1');
-video1.addEventListener('click', openVideo);
-const video2 = document.getElementById('work-2');
-video2.addEventListener('click', openVideo);
-const video3 = document.getElementById('work-3');
-video3.addEventListener('click', openVideo);
-const video4 = document.getElementById('work-4');
-video4.addEventListener('click', openVideo);
-const video5 = document.getElementById('work-5');
-video5.addEventListener('click', openVideo);
-const video6 = document.getElementById('work-6');
-video6.addEventListener('click', openVideo);
-const video7 = document.getElementById('work-7');
-video7.addEventListener('click', openVideo);
-const video8 = document.getElementById('work-8');
-video8.addEventListener('click', openVideo);
-const video9 = document.getElementById('work-9');
-video9.addEventListener('click', openVideo);
+const work1 = document.getElementById('work-1');
+work1.addEventListener('click',  () => {
+  openVideo(event, video1);
+});
+const work2 = document.getElementById('work-2');
+work2.addEventListener('click',  () => {
+  openVideo(event, video2);
+});
+const work3 = document.getElementById('work-3');
+work3.addEventListener('click',  () => {
+  openVideo(event, video3);
+});
+const work4 = document.getElementById('work-4');
+work4.addEventListener('click', openVideo);
+const work5 = document.getElementById('work-5');
+work5.addEventListener('click', openVideo);
+const work6 = document.getElementById('work-6');
+work6.addEventListener('click', openVideo);
+const work7 = document.getElementById('work-7');
+work7.addEventListener('click', openVideo);
+const work8 = document.getElementById('work-8');
+work8.addEventListener('click', openVideo);
+const work9 = document.getElementById('work-9');
+work9.addEventListener('click', openVideo);
+
+const video1 = "https://www.youtube.com/embed/g1ulXVeBucA?si=6zkkTfJwKCC04uoI";
+const video2 = "https://www.youtube.com/embed/Xpf5P7X0sNo?si=oYsHdub9m-ae8KLL";
+const video3 = "https://www.youtube.com/embed/Xpf5P7X0sNo?si=oYsHdub9m-ae8KLL";
+const video4 = '';
+const video5 = '';
+const video6 = '';
+const video7 = '';
+const video8 = '';
+const video9 = '';
 
 //function playSound() {
     //const audio = document.getElementById('btn-sound');
@@ -121,11 +137,11 @@ video9.addEventListener('click', openVideo);
 
 const video = document.getElementById('videoo');
 
-function openVideo(event) {
+function openVideo(event, currentVideo) {
 
-    
+    event.preventDefault();
 
-    video.src = "https://www.youtube.com/embed/g1ulXVeBucA?si=6zkkTfJwKCC04uoI"
+    video.src = currentVideo;
     overlay.style.visibility = 'visible';
     overlay.style.opacity = '1';
     overlay.style.zIndex = '999';
@@ -138,10 +154,10 @@ function closeVideo(event) {
     //playSound();
 
     event.preventDefault();
-    
+
+    video.src = '';
+
     overlay.style.visibility = 'hidden';
     overlay.style.opacity = '0';
     overlay.style.zIndex = '-1';
-
-    video.src = "";
 };
