@@ -305,6 +305,42 @@ header img {
     padding-top: 85%;
 }
 
+.contact-container {
+
+    background-color: #1a1628;
+
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 120vh;
+    height: auto;
+    padding: 50px;
+    border-radius: 65px;
+    gap: 20px;
+    
+}
+
+.input-slot {
+    width: 50%;
+    margin: .5%;
+    border-radius: 15px;
+    border: #c2c5ff 3px solid;
+    outline: none;
+    padding: 5px;
+    padding-left: 8px;
+    
+
+    font-family: 'Nunito';
+    font-size: 20px;
+    color: #614d9f;
+}
+
+.input-slot:focus {
+    border: 5px solid #614d9f;
+}
+
 #work-1{
     background-image: url('images/perks-of-being-a-wallflower-thumbnail.png');
 }
