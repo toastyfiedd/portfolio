@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="portfolio_style.css">
         <script src="portfolio.js" defer></script>
     </head>
-    <body id="purple-bg">
+    <body>
         <header>
             <div>
                 <img id="logo" src="images/logo_only.png"> 
@@ -17,7 +17,7 @@
 
             <nav class="button-container">
                 <button onclick="location.href='index.html'">Home</button>
-                <button>My Work</button>
+                <button onclick="location.href='my-works.html'">My Work</button>
                 <button onclick="location.href='about.html'">About</button>
                 <button onclick="location.href='contact.html'">Contact</button>
             </nav>
@@ -31,8 +31,21 @@
             <button id="bsky-btn" class="contact-button" onclick="window.location.href='https://bsky.app/profile/toastyfied.bsky.social';"></button>
         </div>
 
+        <div class="contact-container">
+            <h2 style="margin: 0; text-align: left;">Get in Touch!</h2>
+            <hr style="width: 300px; background-color: #c2c5ff; height: 5px; border: none; border-radius: 5px; margin: 0;">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="e2491744-b815-4956-b278-12036deec848">
+                <input type="text" name="name" placeholder="Your Name" class="input-slot" required>
+                <input type="email" name="email" placeholder="Your Email" class="input-slot" required>
+                <textarea name="message" placeholder="Your Message" class="input-slot" required></textarea><br>
+                <button type="submit" style="margin-top: 15px;">Submit ></button>
+            </form>
+        </div>
+
 
         
+        <audio id="btn-sound" src="button.wav"></audio>
         <button id="darkmode-btn" class="darkmode-btn"></button>
         <footer></footer>
     </body>
