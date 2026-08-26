@@ -683,8 +683,8 @@ p {
         margin: 0 auto;
         display: block;
         width: 80%;
-        padding: 50px;
-        border-radius: 75px;
+        padding: 25px;
+        border-radius: 50px;
         background-color: rgba(26, 22, 40, .7);
         text-align: center;
         justify-content: center;
